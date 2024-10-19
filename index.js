@@ -1,17 +1,17 @@
-console.log("hello world");
-// Part-1----- Basic Node JS------------
-//-------Event loop Explained--------
-setImmediate(()=>console.log("setImmediate"));
-setTimeout(()=>console.log("Timer expired"),0);
-Promise.resolve(()=>console.log("Promise"));
+// console.log("hello world");
+// // Part-1----- Basic Node JS------------
+// //-------Event loop Explained--------
+// setImmediate(()=>console.log("setImmediate"));
+// setTimeout(()=>console.log("Timer expired"),0);
+// Promise.resolve(()=>console.log("Promise"));
 
-fs.readFile(newLocalutf8",()=>{
-    setTimeout(()=>console.log("2nd timer"),0);
-process.nextTick(()=>console.log("2nd setImmediate"));
-console.log("file reading c8");
-}); 
-    process.nextTick(()=>console.log("nextTick"));
-    console.log("last line of the file");/*
+// fs.readFile(newLocalutf8",()=>{
+//     setTimeout(()=>console.log("2nd timer"),0);
+// process.nextTick(()=>console.log("2nd setImmediate"));
+// console.log("file reading c8");
+// });
+//     process.nextTick(()=>console.log("nextTick"));
+//     console.log("last line of the file");/*
 // What is Event Loop in Node.js?
 /* The Event Loop in Node.js is a key concept that allows Node.js to handle multiple operations (like reading files, making network requests, etc.) without blocking the execution of other code. This makes Node.js very efficient, especially for I/O operations.
 TICK- In nodejs Tick mean that one Full cycle of the Event Loop is Knows as Tick.
@@ -94,4 +94,30 @@ Now the size of thread pool become 100
 */
 // epoll(linux)
 // kqueue(MacOs)
-// CODE 
+// CODE
+// SERVER
+// 1 protocol
+// 2 TCP/Ip
+// 3 client
+// 4 http/ftp/smtp
+// 5 web server
+// 6 socket and web socket
+// 7 packets
+// 8 stream and buffer
+// 9 DNS SERVER
+// 10 PORT
+// 11 HOW TO CREATE SERVER
+// NODE JS HAS MODULES
+// HTTP
+const http = require("node:http");
+
+const Server = http.createServer(function (req, res) {
+  res.end("hello world");
+});
+Server.listen(1111);
+// GO TO WEB BROWER
+// SEARCH LOCALHOST:1111
+// go to the inspect now you see the magic
+// this is not the best way
+// we use express to
+//
