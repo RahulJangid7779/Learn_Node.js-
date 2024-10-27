@@ -123,5 +123,5 @@ Now the size of thread pool become 100
 //
 // DATA BASE SQL noSQL
 /* what is database ?
-what is dbms ?
-type of database?
+// what is dbms ?
+// type of database?*/
